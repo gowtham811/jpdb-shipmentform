@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="jscript.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="form-control-sm">
+        <form class="form-border" id="shipForm" method="get">
+          <h5>Shipment Management Form</h5>
+          <br />
+          <div class="form-group">
+            <label for="ship-no">Shipment Number:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="ship-no"
+              onchange="getShipNo()"
+              aria-required="false"
+            />
+          </div>
+          <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea class="form-control" id="description" rows="2" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="source">Source:</label>
+            <input type="text" class="form-control" id="source" required />
+          </div>
+          <div class="form-group">
+            <label for="destination">Destination:</label>
+            <input type="text" class="form-control" id="destination" required />
+          </div>
+          <div class="form-group">
+            <label for="shipping-date">Shipping Date:</label>
+            <input
+              type="date"
+              class="form-control"
+              id="shipping-date"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="expected-date">Expected Delivery Date:</label>
+            <input
+              type="date"
+              id="datetype"
+              class="form-control"
+              id="expected-date"
+              required
+            />
+          </div>
+          <div class="form-group text-center">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="save"
+              onclick="saveData()"
+              disabled
+            >
+              Save
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="change"
+              onclick="changeData()"
+              disabled
+            >
+              Change
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="reset"
+              onclick="resetData()"
+              disabled
+            >
+              Reset
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

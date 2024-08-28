@@ -1,0 +1,64 @@
+.form-control-sm label {
+  font-weight: 600;
+}
+
+textarea {
+  resize: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 7px rgb(188, 180, 180);
+}
+
+textarea::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background-color: rgb(0, 0, 0);
+}
+.form-control-sm input textarea {
+  border-bottom-style: 2px solid black;
+  box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.2);
+  width: 20rem;
+}
+.form-control:focus {
+  box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.2);
+  border: 0.5px solid rgba(1, 10, 18, 40);
+  outline: none;
+}
+.container-fluid {
+  margin-top: 2rem;
+  max-width: fit-content;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 1px rgba(73, 70, 70, 0.6);
+}
+h5 {
+  text-align: center;
+  text-decoration: underline;
+}
+.btn {
+  padding: 5px 20px;
+  border-radius: 50px;
+  font-size: medium;
+}
+.form-border input textarea {
+  color: black;
+  width: fit-content;
+}
+.form-border {
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+.btn :active {
+  transform: scale(0.9);
+}
+.btn :focus {
+  transition: all 0.6s ease-in-out;
+  border-color: transparent;
+}
+.btn:hover {
+  color: rgb(0, 0, 0);
+}
